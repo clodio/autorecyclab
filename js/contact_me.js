@@ -1,11 +1,11 @@
-$(function() {
+$(function () {
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
-    submitError: function($form, event, errors) {
+    submitError: function ($form, event, errors) {
       // additional error messages or events
     },
-    submitSuccess: function($form, event) {
+    submitSuccess: function ($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
       var name = $("input#name").val();
@@ -19,6 +19,8 @@ $(function() {
       }
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+
+      //url: "././mail/contact_me.php",
       $.ajax({
         url: "././mail/contact_me.php",
         type: "POST",
@@ -29,47 +31,48 @@ $(function() {
           message: message
         },
         cache: false,
-        success: function() {
+        success: function () {
           // Success message
           $('#success').html("<div class='alert alert-success'>");
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
           $('#success > .alert-success')
-            .append("<strong>Your message has been sent. </strong>");
+            .append("<strong>Votre message a été envoyé. </strong>");
           $('#success > .alert-success')
             .append('</div>');
           //clear all fields
           $('#contactForm').trigger("reset");
         },
-        error: function() {
+        error: function () {
           // Fail message
           $('#success').html("<div class='alert alert-danger'>");
           $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
-          $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
+          $('#success > .alert-danger').append($("<strong>").text("Désolé " + firstName + ", il semble que mon serveur  de mail ne fonctionne pas."));
+          $('#success > .alert-danger').html("Désolé, il semble que mon serveur de mail ne fonctionne pas. Essayez plus tard ou envoyez moi un message à <strong><a href='mailto:contact@autorecyclab.com?body=" + encodeURIComponent(message) + "'>contact@autorecyclab.com</a></strong>");
           $('#success > .alert-danger').append('</div>');
           //clear all fields
-          $('#contactForm').trigger("reset");
+          //$('#contactForm').trigger("reset");
         },
-        complete: function() {
-          setTimeout(function() {
+        complete: function () {
+          setTimeout(function () {
             $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
           }, 1000);
         }
       });
     },
-    filter: function() {
+    filter: function () {
       return $(this).is(":visible");
     },
   });
 
-  $("a[data-toggle=\"tab\"]").click(function(e) {
+  $("a[data-toggle=\"tab\"]").click(function (e) {
     e.preventDefault();
     $(this).tab("show");
   });
 });
 
 /*When clicking on Full hide fail/success boxes */
-$('#name').focus(function() {
+$('#name').focus(function () {
   $('#success').html('');
 });

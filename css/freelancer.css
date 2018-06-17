@@ -282,7 +282,7 @@ header.masthead h2 {
 
 .floating-label-form-group {
   position: relative;
-  border-bottom: 1px solid #e9ecef;
+  /*border-bottom: 1px solid #e9ecef;*/
 }
 
 .floating-label-form-group input,
@@ -418,3 +418,29 @@ header.masthead h1 span {
   list-style: none;
   text-align: center;
 }
+
+.fa {
+  width: 20px;
+}
+
+.form-control {
+  border: 1px solid #eee;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  border: 1px solid #eee;
+}
+
+header.mastheadwithimage {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url(../img/header.jpg);
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.green {}
