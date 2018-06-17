@@ -443,4 +443,6 @@ header.mastheadwithimage {
   background-size: cover;
 }
 
-.green {}
+.colSpace {
+  padding: 21px;
+}
