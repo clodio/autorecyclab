@@ -23,6 +23,11 @@
   gtag('config', 'UA-121235155-1');
 </script>
 
+<script>
+  if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./js/service-worker.js?e');
+}
+</script>
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
