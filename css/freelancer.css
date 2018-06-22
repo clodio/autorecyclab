@@ -436,7 +436,7 @@ header.mastheadwithimage {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url(../img/header2.jpg);
-  background-position: center center;
+  background-position: top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -447,7 +447,7 @@ header.mastheadwithimage1 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url(../img/header.jpg);
-  background-position: center center;
+  background-position: top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -456,4 +456,11 @@ header.mastheadwithimage1 {
 
 .colSpace {
   padding: 21px;
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .spacer-header {
+    margin: 100px;
+  }
 }
