@@ -459,8 +459,19 @@ header.mastheadwithimage1 {
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+
+@media (min-width: 1200px) {
   .spacer-header {
     margin: 100px;
+  }
+}
+
+.logo-nav {
+  width: 200px;
+}
+
+@media (min-width: 992px) {
+  .logo-nav {
+    width: 300px;
   }
 }

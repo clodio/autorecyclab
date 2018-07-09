@@ -14,20 +14,23 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121235155-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121235155-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-121235155-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-<script>
-  if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./js/service-worker.js?e');
-}
-</script>
+    gtag('config', 'UA-121235155-1');
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./js/service-worker.js?e');
+    }
+  </script>
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -50,7 +53,8 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><span>AutoRecyc</span><span class="spanlab">Lab</span><i class="fa fa-recycle"></i>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img src="./img/logo.jpg" alt="Autorecyclab" class="logo-nav">
       </a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,8 +108,10 @@
       </h2>
       <hr class="star-black mb-5">
       <div class="row">
-        <div class="col-lg-3 bg-secondary text-white colSpace text-center"><img style="width:180px" src="img/pictos/pollution-G.png" alt=""/></div>
-          <div class="col-lg-9 bg-secondary text-white colSpace">
+        <div class="col-lg-3 bg-secondary text-white colSpace text-center">
+          <img style="width:180px" src="img/pictos/pollution-G.png" alt="" />
+        </div>
+        <div class="col-lg-9 bg-secondary text-white colSpace">
           <p>
             <strong>Le 7ème continent</strong> : un amas de déchets plastiques de
             <br/>
@@ -121,9 +127,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 bg-primary text-white colSpace text-center"><img style="width:150px" src="img/pictos/centre-tri-G.png"  alt=""/></div>
+        <div class="col-lg-3 bg-primary text-white colSpace text-center">
+          <img style="width:150px" src="img/pictos/centre-tri-G.png" alt="" />
+        </div>
         <div class="col-lg-9 bg-primary text-white colSpace">
-            <p>
+          <p>
             <strong>Le Recyclage</strong>
             <br/>
             <br/> Des solutions existent… aujourd’hui on peut recycler des déchets plastiques pour créer de nouveaux objets.
@@ -136,7 +144,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 bg-secondary text-white colSpace text-center"><img style="width:180px" src="img/pictos/machines-G.png"  alt=""/></div>
+        <div class="col-lg-3 bg-secondary text-white colSpace text-center">
+          <img style="width:180px" src="img/pictos/machines-G.png" alt="" />
+        </div>
         <div class="col-lg-9 bg-secondary text-white colSpace">
           <p>
             <strong>Un geste du Quotidien
@@ -150,7 +160,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 bg-primary text-white colSpace text-center"><img style="width:180px" src="img/pictos/pot-crayons-G.png"  alt=""/></div>
+        <div class="col-lg-3 bg-primary text-white colSpace text-center">
+          <img style="width:180px" src="img/pictos/pot-crayons-G.png" alt="" />
+        </div>
         <div class="col-lg-9 bg-primary text-white colSpace">
           <p>
             <strong>AutoRecycLab</strong> est un atelier mobile et pratique qui présente des techniques de recyclage du plastique
@@ -163,7 +175,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 bg-secondary text-white colSpace text-center"><img style="width:180px" src="img/pictos/ampoule2-G.png"  alt=""/></div>
+        <div class="col-lg-3 bg-secondary text-white colSpace text-center">
+          <img style="width:180px" src="img/pictos/ampoule2-G.png" alt="" />
+        </div>
         <div class="col-lg-9 bg-secondary text-white colSpace">
           <p>
             <strong>Pourquoi ce projet ?</strong>
@@ -179,7 +193,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 bg-primary text-white colSpace text-center"><img style="width:180px" src="img/pictos/ecole4-G.png"  alt=""/></div>
+        <div class="col-lg-3 bg-primary text-white colSpace text-center">
+          <img style="width:180px" src="img/pictos/ecole4-G.png" alt="" />
+        </div>
         <div class="col-lg-9 bg-primary text-white colSpace">
           <p>
             <strong>Concrètement :
@@ -226,16 +242,17 @@
       <div class="row align-items-center justify-content-center">
         <div class="col-lg-12 align-items-center justify-content-center"></div>
         <p>
-        Le projet AutoRecycLab s’inspire du projet Precious Plastic de Dave
-        Hakkens pour la partie technique de transformation du plastique :
-      </p>
-        <iframe title="Vidéo présentation" width="696" height="392" src="https://www.youtube.com/embed/8J7JZcsoHyA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-       <p>
-       <br/>
-       <br/>
-        Yvan Bourgnon dévoile le bateau de son nouveau défi, The Sea Cleaners :
-      </p>
-        <iframe title="Vidéo présentation2" width="696" height="392" src="https://www.youtube.com/embed/MJ6O0Wcaw6A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          Le projet AutoRecycLab s’inspire du projet Precious Plastic de Dave Hakkens pour la partie technique de transformation du
+          plastique :
+        </p>
+        <iframe title="Vidéo présentation" width="696" height="392" src="https://www.youtube.com/embed/8J7JZcsoHyA" frameborder="0"
+          allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p>
+          <br/>
+          <br/> Yvan Bourgnon dévoile le bateau de son nouveau défi, The Sea Cleaners :
+        </p>
+        <iframe title="Vidéo présentation2" width="696" height="392" src="https://www.youtube.com/embed/MJ6O0Wcaw6A" frameborder="0"
+          allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
     </div>
@@ -250,7 +267,8 @@
       <div class="row">
         <div class="col-lg-12 mx-auto text-center">
           <p>Ce projet est en cours de construction en Ille-et-Vilaine à Saint Aubin du Cormier. </p>
-          <p>N’hésitez pas à <a href="mailto:contact@autorecyclab.fr?subject=autorecyclab">nous contacter</a> pour plus de renseignements</p>
+          <p>N’hésitez pas à
+            <a href="mailto:contact@autorecyclab.fr?subject=autorecyclab">nous contacter</a> pour plus de renseignements</p>
         </div>
       </div>
     </div>
@@ -290,7 +308,10 @@
 
   <div class="copyright py-4 text-center text-white">
     <div class="container">
-      <small>Copyright &copy; Autorecyclab 2018</small><small> -  <a href="legal_mentions.html" rel="nofollow">Mentions légales</a></small>
+      <small>Copyright &copy; Autorecyclab 2018</small>
+      <small> -
+        <a href="legal_mentions.html" rel="nofollow">Mentions légales</a>
+      </small>
     </div>
   </div>
 
